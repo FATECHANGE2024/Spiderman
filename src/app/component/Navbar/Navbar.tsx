@@ -185,9 +185,11 @@ export default function Navbar() {
                             <hr className="uLine w-0 transition-all duration-400" />
                         </div>
                         {/* PLACEMENT */}
-                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}>Training & Placements
-                            <hr className="uLine w-0 transition-all duration-400" />
-                        </div>
+                        <Link href="/tnp" className="cursor-pointer">
+                            <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}>Training & Placements
+                                <hr className="uLine w-0 transition-all duration-400" />
+                            </div>
+                        </Link>
                         {/* RANKING */}
                         <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}>Ranking
                             <hr className="uLine w-0 transition-all duration-400" />
@@ -201,9 +203,9 @@ export default function Navbar() {
                             <hr className="uLine w-0 transition-all duration-400" />
                         </div>
                         {/* CONTACT */}
-                        <Link href="/ContactUs" className="cursor-pointer">  
+                        <Link href="/ContactUs" className="cursor-pointer">
                             <div className="mx-4 mb-4 lg:mx-0 lg:mb-0 " onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)} >Contact Us
-                             <hr className="uLine w-0 transition-all duration-400" />
+                                <hr className="uLine w-0 transition-all duration-400" />
                             </div>
                         </Link>
                     </div>
