@@ -304,89 +304,67 @@ const handleSubmit = async (e) => {
 };
 
     return (
-        <div className="">
-            <Navbar />
-            <div className="min-h-screen bg-black text-white py-10 px-4 ">
-                <div className="max-w-3xl mx-auto bg-zinc-900 rounded-lg p-8 shadow-xl mt-35">
-                    <h2 className="text-3xl font-bold mb-6 text-center text-orange-500">Grievance Redressal Form</h2>
-                    <form onSubmit={handleSubmit} className="space-y-4">
-                        <input
-                            name="name"
-                            type="text"
-                            placeholder="Your Name"
-                            required
-                            onChange={handleChange}
-                            className="w-full p-3 rounded bg-zinc-800 border border-zinc-700 placeholder-gray-400"
-                        />
-                        <input
-                            name="email"
-                            type="email"
-                            placeholder="Your Email"
-                            required
-                            onChange={handleChange}
-                            className="w-full p-3 rounded bg-zinc-800 border border-zinc-700 placeholder-gray-400"
-                        />
-                        <input
-                            name="department"
-                            type="text"
-                            placeholder="Your Department"
-                            required
-                            onChange={handleChange}
-                            className="w-full p-3 rounded bg-zinc-800 border border-zinc-700 placeholder-gray-400"
-                        />
-                        <select
-                            name="category"
-                            required
-                            onChange={handleChange}
-                            className="w-full p-3 rounded bg-zinc-800 border border-zinc-700 text-white"
-                        >
-                            <option value="">Select Category</option>
-                            <option>Academic</option>
-                            <option>Harassment</option>
-                            <option>Hostel</option>
-                            <option>Infrastructure</option>
-                            <option>Other</option>
-                        </select>
-                        <textarea
-                            name="message"
-                            rows="4"
-                            placeholder="Describe your grievance..."
-                            required
-                            onChange={handleChange}
-                            className="w-full p-3 rounded bg-zinc-800 border border-zinc-700 placeholder-gray-400"
-                        />
-                        <button
-                            type="submit"
-                            className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded font-semibold transition"
-                        >
-                            Submit Grievance
-                        </button>
-                        {status && <p className="text-sm text-green-400 mt-2">{status}</p>}
-                        
-                    </form>
-                </div>
-            </div>
-
-            {/* <form
-                onSubmit={handleSubmit}
-                className="w-[85%] mx-auto p-6 bg-gray-900 text-white rounded-lg shadow-lg space-y-4 mt-60"
-            >
-                <h2 className="text-2xl font-semibold">Grievance Form</h2>
-                <input name="name" placeholder="Full Name" onChange={handleChange} required className="w-full p-2 rounded bg-gray-800 border border-gray-700" />
-                <input name="email" type="email" placeholder="Email" onChange={handleChange} required className="w-full p-2 rounded bg-gray-800 border border-gray-700" />
-                <input name="department" placeholder="Department" onChange={handleChange} required className="w-full p-2 rounded bg-gray-800 border border-gray-700" />
-                <select name="category" onChange={handleChange} required className="w-full p-2 rounded bg-gray-800 border border-gray-700">
+       <div className="">
+    <Navbar />
+    <div className="min-h-screen bg-white text-white py-10 px-4 ">
+        <div className="max-w-3xl mx-auto bg-white border-gray-200 rounded-2xl p-8 shadow-2xl mt-40 ">
+            <h2 className="text-3xl font-bold mb-6 text-center text-orange-500">Grievance Redressal Form</h2>
+            <form onSubmit={handleSubmit} className="space-y-4">
+                <input
+                    name="name"
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                    onChange={handleChange}
+                    className="w-full p-3 rounded bg-white border border-zinc-700 placeholder-black text-black"
+                />
+                <input
+                    name="email"
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                    onChange={handleChange}
+                    className="w-full p-3 rounded bg-white border border-zinc-700 placeholder-black text-black"
+                />
+                <input
+                    name="department"
+                    type="text"
+                    placeholder="Your Department"
+                    required
+                    onChange={handleChange}
+                    className="w-full p-3 rounded bg-white border border-zinc-700 placeholder-black text-black"
+                />
+                <select
+                    name="category"
+                    required
+                    onChange={handleChange}
+                    className="w-full p-3 rounded bg-white border border-zinc-700 placeholder-black text-black"
+                >
                     <option value="">Select Category</option>
                     <option>Academic</option>
-                    <option>Hostel</option>
                     <option>Harassment</option>
+                    <option>Hostel</option>
                     <option>Infrastructure</option>
                     <option>Other</option>
                 </select>
-                <textarea name="message" placeholder="Describe your grievance..." onChange={handleChange} required rows={4} className="w-full p-2 rounded bg-gray-800 border border-gray-700" />
-                <button type="submit" className="bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded">Submit</button>
-                {status && <p className="text-sm text-green-400">{status}</p>}
-            </form> */}
+                <textarea
+                    name="message"
+                    rows="4"
+                    placeholder="Describe your grievance..."
+                    required
+                    onChange={handleChange}
+                    className="w-full p-3 rounded bg-white border border-zinc-700 placeholder-black text-black"
+                />
+                <button
+                    type="submit"
+                    className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded font-semibold transition"
+                >
+                    Submit Grievance
+                </button>
+            </form>
         </div>
+    </div>
+</div>
+
     );
 }

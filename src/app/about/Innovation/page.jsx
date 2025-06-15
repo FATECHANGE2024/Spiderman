@@ -70,7 +70,7 @@ export default function Innovation() {
                         {pillars.map((pillar, index) => (
                             <div
                                 key={index}
-                                className="p-4 bg-gray-900 rounded-xl shadow hover:shadow-lg transition text-lg flex items-start gap-3"
+                                className="p-4 bg-gray-600 rounded-xl shadow hover:shadow-lg transition text-lg flex items-start gap-3"
                             >
                                 <span className="text-2xl">{pillar.emoji}</span>
                                 <p className="text-left text-gray-200">{pillar.text}</p>
@@ -87,7 +87,7 @@ export default function Innovation() {
                         {features.map((feature, index) => (
                             <li
                                 key={index}
-                                className="bg-gray-900 p-4 rounded-xl border-l-4 border-blue-500 hover:bg-gray-800 transition"
+                                className="bg-gray-600 p-4 rounded-xl border-l-4 border-blue-500 hover:bg-gray-800 transition"
                             >
                                 <span className="font-semibold text-gray-100">{feature}</span>
                             </li>

@@ -10,9 +10,9 @@ export default function Navbar() {
 
     // SET HEADER BACKGROUND COLOR
     useEffect(() => {
-            setHeaderBg(true);
-            const header = document.getElementById("header");
-            header!.classList.add("bg-linear-to-b", "from-black", "to-black/[0]");
+        setHeaderBg(true);
+        const header = document.getElementById("header");
+        header!.classList.add("bg-linear-to-b", "from-black", "to-black/[0]");
     }, [])
 
     // HEADER BACKGROUND COLOR TRANSITION ON HOME PAGE
@@ -114,9 +114,9 @@ export default function Navbar() {
                     <div className="ml-4"><img src="/media/logo2.png" className="h-[50px]" /></div>
                     <div className="mr-4">
                         <ul className="hidden lg:flex lg:gap-2 lg:text-white">
-                            <li className="bg-orange-400 px-4 py-2 rounded-3xl">Notification</li>
-                            <li className="bg-orange-400 px-4 py-2 rounded-3xl">Admission</li>
-                            <li className="bg-orange-400 px-4 py-2 rounded-3xl">Login</li>
+                            <li className="bg-orange-400 px-4 py-2 rounded-3xl cursor-pointer hover:bg-orange-500">Notification</li>
+                            <li className="bg-orange-400 px-4 py-2 rounded-3xl cursor-pointer hover:bg-orange-500">Admission</li>
+                            <li className="bg-orange-400 px-4 py-2 rounded-3xl cursor-pointer hover:bg-orange-500">Login</li>
                         </ul>
                     </div>
                     <div onClick={() => openMobileMenu()} className="lg:hidden flex flex-col justify-center items-center gap-3 h-[60px] w-[60px] bg-orange-400">
@@ -158,7 +158,7 @@ export default function Navbar() {
                                         <Link className="hover:bg-black hover:text-white" href="/about/IJNCT">International Joural</Link>
                                         <Link className="hover:bg-black hover:text-white" href="/about/Grievance">Greievance Redressal</Link>
                                     </div>
-                                    
+
                                 </div>
                             </div>
 
@@ -201,9 +201,11 @@ export default function Navbar() {
                             <hr className="uLine w-0 transition-all duration-400" />
                         </div>
                         {/* CONTACT */}
-                        <div className="mx-4 mb-4 lg:mx-0 lg:mb-0" onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)}>Contact Us
-                            <hr className="uLine w-0 transition-all duration-400" />
-                        </div>
+                        <Link href="/ContactUs" className="cursor-pointer">  
+                            <div className="mx-4 mb-4 lg:mx-0 lg:mb-0 " onMouseOver={(e) => onMouseOver(e)} onMouseOut={(e) => onMouseOut(e)} >Contact Us
+                             <hr className="uLine w-0 transition-all duration-400" />
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </nav>

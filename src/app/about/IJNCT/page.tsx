@@ -14,12 +14,12 @@ export default function IJNCT() {
                 />
             </section>
 
-            <section className="bg-white text-white py-16 px-6 md:px-20">
-                <div className="w-[90%] mx-auto rounded-2xl bg-black p-10 ">
+            <section className="bg-white text-black py-16 px-6 md:px-20">
+                <div className="w-[90%] mx-auto rounded-2xl bg-gray-200 p-10 ">
                     <h2 className="text-4xl font-bold text-center mb-4 text-orange-400">
                         International Journal of LNCT
                     </h2>
-                    <p className="text-center text-gray-400 text-sm mb-8">
+                    <p className="text-center text-black text-sm mb-8">
                         ISSN (Online): 2456-9895
                     </p>
 
@@ -29,7 +29,7 @@ export default function IJNCT() {
                         className="w-full rounded-lg mb-10"
                     />
 
-                    <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
+                    <div className="space-y-6 text-lg text-black leading-relaxed">
                         <p>
                             Lakshmi Narain College of Technology (LNCT) group of colleges is one of the oldest and largest education groups in central India. Founded in 1994, LNCT Bhopal has the privilege of being the first private (self-financed) institute of Madhya Pradesh. International Journal of LNCT (IJLNCT) is published by LNCT.
                         </p>
